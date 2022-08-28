@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document </title>
+<style>
+
+.center{
+ margin-left:auto;
+ margin-right: auto;
+ width:70%;
+ border-style:solid;
+}
+
+table.center{
+ margin-left:auto;
+ margin-right: auto;
+ width:90%;
+ border-style:  none;
+}
+
+#myH1{
+ text-align: center;
+}
+
+.tableTitle{
+ background-color: black;
+ color:white;
+}
+
+</style>
+</head>
+<body>
+<div class="center">
+ <h1 id="myH1">本次作業: CSS使用練習 </h1>
+ <ol>
+   <li>模仿此檔案的外觀格式 </li>
+   <li>從W3 school中的CSS範例中,選擇5個加入此檔案中 </li>
+  </ol>
+</div>
+<hr/>
+<div class="center">
+  <table class="center">
+   
+<tr>
+    <td class="tableTitle">範例名稱: CSS Units</td>
+   </tr>
+   
+<tr>
+    <td class="tableTitle"><style>
+h1 {font-size: 1.5cm;}
+h2 {font-size: 1cm;}
+p {
+    font-size: 0.5cm;
+    line-height: 1cm;
+}
+</style>
+</head>
+<body>
+
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+</body></td>
+   </tr>
+
+<tr>
+    <td class="tableTitle">範例名稱:CSS Colors</td>
+   </tr>
+   
+<tr>
+    <td class="tableTitle"><body>
+
+<p style="background-color:#FFFF00">
+Color set by using hex value
+</p>
+
+<p style="background-color:rgb(255,255,0)">
+Color set by using rgb value
+</p>
+
+<p style="background-color:yellow">
+Color set by using color name
+</p>
+
+</body></td>
+   </tr>
+
+ <tr>
+    <td class="tableTitle">範例名稱: CSS Animatable</td>
+   </tr>
+   
+<tr>
+    <td class="tableTitle"><style> 
+#myDIV {
+    width: 300px;
+    height: 200px;
+    background: red;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+</style>
+</head>
+<body>
+
+<p>Gradually change the background-color from red, to blue:<p>
+<div id="myDIV"></div>
+
+<p>The background-position property is <em>animatable</em> in CSS.</p>
+<p><strong>Note:</strong> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body></td>
+   </tr> 
+
+<tr>
+    <td class="tableTitle">範例名稱:CSS3 animation-direction Property </td>
+   </tr>
+   
+<tr>
+    <td class="tableTitle"><style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: myfirst 5s infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+
+@keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+</style>
+</head>
+<body>
+
+<p><strong>Note:</strong> The animation-direction property is not supported in Internet Explorer 9 and earlier versions.</p>
+<div></div>
+
+</body></td>
+   </tr> 
+
+<tr>
+    <td class="tableTitle">範例名稱:CSS3 transform-style Property </td>
+   </tr>
+   
+<tr>
+    <td class="tableTitle"><style>
+#div1 {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 100px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#div2 {
+    padding: 50px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: red;
+    -webkit-transform: rotateY(60deg); /* Chrome, Safari, Opera */
+    -webkit-transform-style: preserve-3d; /* Chrome, Safari, Opera */
+    transform: rotateY(60deg);
+    transform-style: preserve-3d;
+}
+
+#div3 {
+    padding: 40px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: yellow;
+    -webkit-transform: rotateY(-60deg); /* Chrome, Safari, Opera */
+    transform: rotateY(-60deg);
+
+}
+</style>
+</head>
+<body>
+
+<div id="div1">
+  <div id="div2">HELLO
+  	<div id="div3">YELLOW</div>
+  </div>
+</div>
+
+<p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the transform-style property.</p>
+
+<p><b>Note:</b> Chrome, Safari and Opera supports an alternative, the -webkit-transform-style property.</p>
+
+</body></td>
+   </tr>
+
+</table>
+</div>
+</body>
+</html>
+
+</body>
+</html>
